@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Anime">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/ADD_ANIME_TITLE"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="32dp"
+                    android:layout_marginTop="32dp"
+                    android:text="ADD ANIME"
+                    android:textSize="26dp"
+                    android:textColor="@color/white"
+                    android:background="@color/teal_700"
+                    android:gravity="center_horizontal">
+
+                </TextView>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/AnimeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginHorizontal="32dp"
+                    android:layout_marginTop="70dp"
+                    android:hint="Anime Name"
+                    app:endIconMode="clear_text"
+                    app:errorEnabled="true"
+                    android:layout_alignTop="@+id/ADD_ANIME_TITLE">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextAnimeName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Genres"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginHorizontal="32dp"
+                    android:layout_marginTop="70dp"
+                    android:hint="Genres"
+                    app:endIconMode="clear_text"
+                    app:errorEnabled="true"
+                    android:layout_alignTop="@+id/AnimeName"
+                    >
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextAnimeGenres"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textMultiLine"
+                            android:lines="2"
+                            android:overScrollMode="always"
+                            android:scrollbarStyle="insideInset"
+                            android:scrollbars="vertical"
+                            android:scrollHorizontally="false">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/SynopsisTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="32dp"
+                    android:layout_marginTop="90dp"
+                    android:text="Synopsis"
+                    android:textSize="26dp"
+                    android:layout_alignTop="@+id/Genres">
+
+                </TextView>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Synopsis"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginHorizontal="32dp"
+                    android:layout_marginTop="40dp"
+                    app:errorEnabled="true"
+                    android:layout_alignTop="@+id/SynopsisTitle">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextAnimeSynopsis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textMultiLine"
+                            android:lines="6"
+                            android:overScrollMode="always"
+                            android:scrollbarStyle="insideInset"
+                            android:scrollbars="vertical"
+                            android:scrollHorizontally="false">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/DateTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="32dp"
+                    android:layout_marginTop="160dp"
+                    android:text="Date Aired"
+                    android:textSize="26dp"
+                    android:layout_alignTop="@+id/Synopsis">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/btnDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Date"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_alignTop="@+id/Synopsis"
+                    android:layout_marginTop="200dp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/purple_200"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="25dp"/>
+
+
+
+                <TextView
+                    android:id="@+id/CharactersTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="32dp"
+                    android:layout_marginTop="60dp"
+                    android:text="Characters"
+                    android:textSize="26dp"
+                    android:layout_alignTop="@+id/btnDate">
+
+                </TextView>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Characters"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="32dp"
+                    android:layout_marginTop="40dp"
+                    app:errorEnabled="true"
+                    android:layout_alignTop="@+id/CharactersTitle">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextAnimeCharacters"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textMultiLine"
+                            android:lines="3"
+                            android:overScrollMode="always"
+                            android:scrollbarStyle="insideInset"
+                            android:scrollbars="vertical"
+                            android:scrollHorizontally="false">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginHorizontal="32dp"
+                    android:layout_marginTop="110dp"
+                    android:hint="Image URL:"
+                    app:endIconMode="clear_text"
+                    app:errorEnabled="true"
+                    android:layout_alignTop="@+id/Characters">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextImageUrl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/AddAnime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickAdd"
+                    android:text="Add Anime"
+                    android:backgroundTint="@color/teal_700"
+                    android:layout_alignTop="@+id/Image"
+                    android:layout_marginTop="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="25dp"/>
+
+
+
+
+
+
+
+
+
+
+
+                <!--
+
+
+                        <TextView
+                            android:id="@+id/ADDTITLE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ADDING ANIME"
+                            android:textSize="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_centerHorizontal="true"
+                            />
+
+
+                        <EditText
+                            android:id="@+id/editTextAnimeName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Anime Name"
+                            android:inputType="text"
+                            android:layout_alignTop="@+id/ADDTITLE"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="10dp"/>
+
+                        <EditText
+                            android:id="@+id/editTextAnimeGenres"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Genres"
+                            android:inputType="text"
+                            android:layout_alignTop="@+id/editTextAnimeName"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="10dp"/>
+
+                        <EditText
+                            android:id="@+id/editTextAnimeSynopsis"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:layout_alignTop="@+id/TitleSynopsis"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"/>
+
+                        <TextView
+                            android:id="@+id/TitleSynopsis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Synopsis"
+                            android:textSize="25dp"
+                            android:layout_alignTop="@+id/editTextAnimeGenres"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="10dp"/>
+
+                        <EditText
+                            android:id="@+id/editTextAnimeDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Date Aired"
+                            android:inputType="text"
+                            android:layout_alignTop="@+id/editTextAnimeSynopsis"
+                            android:layout_marginTop="250dp"
+                            android:layout_marginLeft="10dp"/>
+
+                        <EditText
+                            android:id="@+id/editTextAnimeCharacters"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Characters"
+                            android:inputType="text"
+                            android:layout_alignTop="@+id/editTextAnimeDate"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="10dp"/>
+
+                        <Button
+                            android:id="@+id/AddAnime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="clickAdd"
+                            android:text="Add Anime"
+                            android:layout_alignTop="@+id/editTextImageUrl"
+                            android:layout_marginTop="100dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="25dp"/>
+
+                        <EditText
+                            android:id="@+id/editTextImageUrl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Insert Image URL"
+                            android:inputType="text"
+                            android:layout_alignTop="@+id/editTextAnimeCharacters"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            />
+
+                 -->
+
+        </RelativeLayout>
+        </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
